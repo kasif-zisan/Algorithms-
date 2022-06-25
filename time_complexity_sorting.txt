@@ -1,7 +1,7 @@
 Time Complexity
 
 Bubble Sort -
-1. Best Case - O(n), when array is sorted
+0. Best Case - O(n), when array is sorted
 2. Worst Case - O(n^2), when array is sorted but in opposite order.
 
 Selection Sort - 
@@ -16,4 +16,12 @@ Useful when array is partially sorted. Used in other hybrid sorting algorithms.
 
 Space Complexity-
 As all of the algorithms do not require taking any extra array or list, so the space complexity is constant. Meaning that the space complexity is O(1),
+
+Merge Sort - 
+In merge sort we keep dividing the array into two parts until they are turned into individual elements. Then wecompare two individual elements and put them in thei correct place in the original array. 
+So at each level we are actually comparing n elements.
+Now the question is how many number of levels are there? Ans - logN
+So the total time complexity is O(nlogn)
+
+And the space complexity is O(n), since it is not a inplace sorting algorithm
 
