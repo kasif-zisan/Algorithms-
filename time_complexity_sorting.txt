@@ -1,0 +1,16 @@
+Time Complexity
+
+Bubble Sort -
+1. Best Case - O(n), when array is sorted
+2. Worst Case - O(n^2), when array is sorted but in opposite order.
+
+Selection Sort - 
+1. Best Case - O(n^2)
+2. Worst Case - O(n^2)
+Useful when list is small.
+
+Insertion Sort - 
+1. Best Case - O(n)
+2. Worst Case - O(n^2), when array is reverse sorted
+Useful when array is partially sorted. Used in other hybrid sorting algorithms.
+
