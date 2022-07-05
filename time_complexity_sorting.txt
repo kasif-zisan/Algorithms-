@@ -18,10 +18,16 @@ Space Complexity-
 As all of the algorithms do not require taking any extra array or list, so the space complexity is constant. Meaning that the space complexity is O(1),
 
 Merge Sort - 
-In merge sort we keep dividing the array into two parts until they are turned into individual elements. Then wecompare two individual elements and put them in thei correct place in the original array. 
+In merge sort we keep dividing the array into two parts until they are turned into individual elements. Then we compare two individual elements and put them in thei correct place in the original array. 
 So at each level we are actually comparing n elements.
 Now the question is how many number of levels are there? Ans - logN
+For MergeSort function - logN
+For merge function -n 
 So the total time complexity is O(nlogn)
 
 And the space complexity is O(n), since it is not a inplace sorting algorithm
+
+Quick Sort - 
+Best Case - O(nlogn) - occurs when the pivot is the middle elements
+Worst Case - O(n^2) - occurs when pivot is the highest or lowest element
 
