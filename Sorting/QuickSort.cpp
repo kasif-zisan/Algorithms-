@@ -5,6 +5,7 @@ void swap(int *a, int *b){
     *a=*b;
     *b=temp;
 }
+//last element pivot
 int part(int arr[], int l, int h){
     int i = l-1;
     int p = arr[h];
@@ -17,6 +18,19 @@ int part(int arr[], int l, int h){
     swap(&arr[i+1],&arr[h]);
     return i+1;
 }
+//first element pivot
+/*int part(int arr[], int l, int h){
+    int i = l+1;
+    int p = arr[l];
+    for(int j=l+1;j<=h;j++){
+        if(arr[j]<p){
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i-1],&arr[l]);
+    return i-1;
+}*/
 void quicksort(int arr[], int l, int h){
     if(l<h){
         int pi = part(arr,l,h);

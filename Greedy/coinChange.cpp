@@ -19,8 +19,8 @@ void coinChange(int n){
     cout<<"the number of notes needed: "<<r.size()<<endl;
 }
 int main(){
-    int n=140;
-    //cout<<"please enter the note: ";
-    //cin>>n;
+    int n;
+    cout<<"please enter the note: ";
+    cin>>n;
     coinChange(n);
 }
