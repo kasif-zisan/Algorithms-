@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int sum_digits(int n){
+    if(n==0) return 0;
+    int left=sum_digits(n/10);
+    int result = left+(n%10);
+    return result;
+}
+int main(){
+    //given a number, print the sum of its digits
+    int n;
+    cin>>n;
+    cout<<sum_digits(n);
+}
