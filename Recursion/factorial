@@ -1,0 +1,14 @@
+//find out factorial of given n
+
+#include<bits/stdc++.h>
+using namespace std;
+int fact(int n){
+    if(n==1) return 1;
+    int sub = fact(n-1);
+    int result = sub*n;
+    return result;
+}
+int main(){
+    int n=5;
+    cout<<fact(5);
+}
